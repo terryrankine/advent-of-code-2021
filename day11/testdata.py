@@ -1,0 +1,26 @@
+import numpy as np
+testdata = '''5483143223
+2745854711
+5264556173
+6141336146
+6357385478
+4167524645
+2176841721
+6882881134
+4846848554
+5283751526'''.splitlines()
+
+testdata = '''2138862165
+2726378448
+3235172758
+6281242643
+4256223158
+1112268142
+1162836182
+1543525861
+1882656326
+8844263151'''.splitlines()
+octo = np.zeros([len(testdata), len(testdata[0])])
+for idx, line in enumerate(testdata):
+    octo[idx] = np.array(list(map(int, [*line])))
+
